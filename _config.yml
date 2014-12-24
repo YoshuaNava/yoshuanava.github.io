@@ -19,15 +19,15 @@ footer:
 # Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
 social:
   - title: twitter
-    url: https://twitter.com/popopopote
+    url: "http://twitter.com/popopopote"
   - title: linkedin
-    url: https://ve.linkedin.com/in/yoshuanavachocron
+    url: "http://ve.linkedin.com/in/yoshuanavachocron"
   - title: stack-exchange
-    url: http://stackexchange.com/users/5531488/yoshuanava
+    url: "http://stackexchange.com/users/5531488/yoshuanava"
   - title: youtube
-    url: https://www.youtube.com/channel/UCbF_buNB5MRenUcW9du5RdA
+    url: "http://www.youtube.com/channel/UCbF_buNB5MRenUcW9du5RdA"
   - title: github
-    url: http://github.com/yoshuanava
+    url: "http://github.com/yoshuanava"
 
 # Postal address (add as many lines as necessary)
 address:
