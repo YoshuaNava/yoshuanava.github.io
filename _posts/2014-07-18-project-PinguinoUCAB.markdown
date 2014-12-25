@@ -11,8 +11,9 @@ description: "Implementation of a small set of Pinguino control boards and senso
 p_languages: "Pinguino C"
 ---
 
-As part of my mandatory communitary service I worked with the Educational Robotics Group at UCAB to implement a small set of Pinguino 
-control boards. The Pinguino boards were choosen because the electronic components are easier to find in Venezuela.
+As part of my mandatory communitary service I worked with the Educational Robotics Group at UCAB to implement a small set of 
+<a href="http://pinguino.cc/">Pinguino control boards</a>. The Pinguino boards were choosen because their electronic components were 
+easier to find in Venezuela.
 
 Based on the requirements of the group, the <a href="https://github.com/PinguinoBase/Pinguino-Base-4550">Pinguino Base 4550 board</a>
 was choosen to be the first prototype. We built one, tested it, and after that, we modified the circuit schematics to reduce costs by
