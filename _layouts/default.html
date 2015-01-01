@@ -16,12 +16,11 @@
 
                     <ul class="sidebar" >
                         <p class="separator">Navigation</p>
-                        <li><a href="/">Home</a></li>
-                        <li><a href="{{ "/projects.html" | prepend: site.url }}">Projects</a></li>
+                        <li><a href="/">Blog</a></li>
+                        <li><a href="{{ "/projects" | prepend: site.url }}">Projects</a></li>
                         <li><a href="{{ "/search.html" | prepend: site.url }}">Search</a></li>
-                        <li><a href="{{ "/tags.html" | prepend: site.url }}">Tags</a></li>
-                        <li><a href="{{ "/archive.html" | prepend: site.url }}">Archive</a></li>
-                        <li><a href="{{ "/contact.html" | prepend: site.url }}">Contact</a></li>
+                        <li><a href="{{ "/about" | prepend: site.url }}">About</a></li>
+                        <li><a class="fa fa-download" href="{{ "/misc/CV-YoshuaNava.pdf" | prepend: site.url }}">CV</a></li>
 
                         <a class="goto-top-link hide-on-phone" href="#top">
                             <div class="goto-top text-center">
@@ -39,14 +38,17 @@
                     <div class="top-nav">
                         <a class="link" href="/">{{ site.name }}</a>
                         <span class="pull-right">
-                            <a id="twitter-ic" class="link" href="https://twitter.com/{{site.owner.twitter}}">
+                            <a id="twitter-ic" class="link" href="{{site.owner.twitter}}">
                                 <i class="fa fa-twitter fa-lg"></i>
                             </a>
-                            <a id="git-ic" class="link" href="https://github.com/{{site.owner.github}}">
+                            <a id="git-ic" class="link" href="{{site.owner.github}}">
                                 <i class="fa fa-github-square fa-lg"></i>
                             </a>
-                            <a id="rss-ic" class="link" href="{{site.url}}/feed.xml">
-                                <i class="fa fa-rss fa-lg"></i>
+                            <a id="git-ic" class="link" href="{{site.owner.youtube}}">
+                                <i class="fa fa-youtube fa-lg"></i>
+                            </a>
+                            <a id="rss-ic" class="link" href="mailto:{{site.owner.email}}">
+                                <i class="fa fa-envelope fa-lg"></i>
                             </a>
                         </span>
                     </div>
