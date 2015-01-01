@@ -9,7 +9,7 @@
     $.fn.simpleJekyllSearch = function(options) { 
         var settings = $.extend({
             jsonFile        : '/search.json',
-            jsonFormat      : 'title,category,desc,url,date',
+            jsonFormat      : 'title,url,date,type',
             template        : '<a href="{url}" title="{title}">{title}</a>',
             searchResults   : '.results',
             searchResultsTitle   : '<h4>Found results</h4>',
