@@ -7,6 +7,7 @@ alt: image-alt
 project-date: September 2013
 category: robotics
 type: project
+comments: true
 title: "Line followers"
 description: "Built to participate in the Venezuelan national robotics competitions."
 p_languages: "Arduino/Processing"

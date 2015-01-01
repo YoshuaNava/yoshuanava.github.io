@@ -7,8 +7,9 @@ alt: image-alt
 project-date: January 2014
 category: other
 type: project
+comments: true
 title: "Performance comparison between file compression tools 7-Zip and PeaZip"
-description: "Informatics systems evaluation final project"
+description: "Informatics Systems Evaluation course final project"
 p_languages: ""
 ---
 
