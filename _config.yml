@@ -1,41 +1,9 @@
-# Site settings
-title: "Yoshua Nava"
-email: "yoshua.nava.chocron@gmail.com"
-description: "My name is Yoshua Nava. I'm an informatics engineer from Universidad Catolica Andres Bello, Caracas, Venezuela. My main dream is to pursue a career in robotics research. This is my blog and portfolio."
+name: Yoshua Nava
+url: http://yoshuanava.github.io
+description: Informatics engineer - Future robotics researcher
 
-# Color settings (hex-codes without the leading hash-tag)
-color:
-  primary: 18bc9c #80B3FF
-  secondary: 2c3e50 #FD6E8A
-  secondary-dark: 233140 #A2122F
-  
-# Footer settings
-footer:
-  copyright: Yoshua Nava
-  location: 
-  social: 
-  credits: 
+permalink: /:year/:month/:day/:title/
+paginate: 10
+pygments: true
 
-# Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
-social:
-  - title: twitter
-    url: "http://twitter.com/popopopote"
-  - title: linkedin
-    url: "http://ve.linkedin.com/in/yoshuanavachocron"
-  - title: stack-exchange
-    url: "http://stackexchange.com/users/5531488/yoshuanava"
-  - title: youtube
-    url: "http://www.youtube.com/channel/UCbF_buNB5MRenUcW9du5RdA"
-  - title: github
-    url: "http://github.com/yoshuanava"
-
-# Postal address (add as many lines as necessary)
-address:
-  - line: Caracas, Venezuela
-  
-# Credits content
-credits: 'Freelance is a free to use, open source Bootstrap theme created by <a href="http://startbootstrap.com">Start Bootstrap</a>.'
-
-# Build settings
-markdown: kramdown
-permalink: pretty
+exclude: ['README.md', 'Gemfile.lock', 'Gemfile', 'Rakefile']

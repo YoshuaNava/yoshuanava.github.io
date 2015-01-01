@@ -5,9 +5,10 @@ date: 2014-12-25
 img: GadgeteerPong.png
 alt: image-alt
 project-date: July 2014
-category: Other
+category: embeddedsystems
 type: project
-description: "Gadgeteer Pong."
+title: "Gadgeteer Pong"
+description: "Pong game developed for the FEZ Hydra Gadgeteer boards."
 p_languages: "C#"
 ---
 
