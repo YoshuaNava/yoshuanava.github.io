@@ -3,9 +3,9 @@ layout: default
 title: Projects
 ---
 
-<div id="blog-archives">
-
-	<h1 class="title1">Robotics</h1>
+<div class="col-sm-12">
+<div class="post">
+	<h1>Robotics</h1>
 	{% for post in site.posts %}
 		{% if post.type == "project" %}
 			{% if post.category == "robotics" %}
@@ -24,6 +24,10 @@ title: Projects
 		{% endif %}
 	{% endfor %}
 
+	<br/>
+	<br/>
+	<hr>
+	<br/>
 	<h1>Embedded systems</h1>
 	{% for post in site.posts %}
 		{% if post.type == "project" %}
@@ -43,6 +47,11 @@ title: Projects
 		{% endif %}
 	{% endfor %}
 	
+	
+	<br/>
+	<br/>
+	<hr>
+	<br/>
 	<h1>Other</h1>
 	{% for post in site.posts %}
 		{% if post.type == "project" %}
@@ -61,4 +70,5 @@ title: Projects
 			{% endif %}
 		{% endif %}
 	{% endfor %}
+</div>
 </div>
