@@ -1,7 +1,7 @@
 ---
 layout: post
 modal-id: 1
-date: 2014-12-25
+date: 2014-07-26
 img: GadgeteerPong.png
 alt: image-alt
 project-date: July 2014

@@ -1,75 +1,65 @@
-<!DOCTYPE html>
-<html>
-<head>
+{% include header.html %}
 
-  <meta charset="UTF-8">
-  <title>{{ page.title }}</title>
-  <meta name="viewport" content="width=device-width">
+<main id="main">
+    <span class="statusbar"></span>
 
-  <!--[if lt IE 9]>
-    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-  <![endif]-->
+    <!-- Wrap all page content here -->
+    <div id="wrap">
+        <div id="main-content" class="container">
+            <div class="row row-offcanvas row-offcanvas-left">
+                <!-- side bar -->
+                <nav id="nav" role="navigation" class="col-sm-2 sidebar-offcanvas">
+                    <header id="menu" role="banner">
+                        <p class="menu-title">Close</p>
+                        <a href="#nav" class="close-btn">Close</a>
+                    </header>
 
-  <link href="/assets/css/style.css" rel="stylesheet" />
-  <link href="/assets/css/colors-dark.css" rel="stylesheet" />
-
-</head>
-
-<body>
-
-
-
-  <header id="header">
-    <h1><a href="/"><i class="icon-sun"></i> {{ site.name }}</a></h1>
-    <p>{{ site.description }}</p>
-  </header>
-
-
-
-  <div id="page">
-
-
-
-    <div id="sidebar">
-      <nav>
-        <ul>
-          <li><a href="/">Blog</a></li>
-          <li><a href="/projects">Projects</a></li>
-          <li><a href="/search/search.html">Search</a></li>
-          <li><a href="/about">About</a></li>
-          <li><a href="/misc/CV-YoshuaNava.pdf">CV</a></li>
-        </ul>
-      </nav>
+                    <ul class="sidebar" >
+                        <p class="separator">Navigation</p>
+                        <li><a href="/">Blog</a></li>
+                        <li><a href="/projects">Projects</a></li>
+                        <li><a href="{{site.url}}/search.html">Search</a></li>
+                        <li><a href="/about">About</a></li>
+                        <li><a href="/misc/CV-YoshuaNava.pdf">CV</a></li>
+                        <a class="link hide-on-phone" href="#top">
+                            <div class="goto-top text-center">
+                                <i class="fa fa-step-forward fa-rotate-270"></i>
+                            </div>
+                        </a>
+                    </ul>
+                </nav>
+                <header id="menu" role="banner">
+                    <p class="menu-title">Menu</p>
+                    <a href="#nav" class="menu-btn">navigation</a>
+                </header>
+                <!-- Content -->
+                <div class="content col-sm-10">
+                    <div class="top-nav">
+                        {{ site.name }}
+                        <span class="pull-right">
+                            <a href="{{site.owner.twitter}}">
+                                <i class="fa fa-twitter"></i>
+                            </a>
+                            <a href="{{site.owner.youtube}}">
+                                <i class="fa fa-youtube"></i>
+                            </a>                            
+                            <a href="{{site.owner.github}}">
+                                <i class="fa fa-github-square"></i>
+                            </a>
+                            <a href="mailto:{{site.owner.email}}">
+                                <i class="fa fa-envelope fa-lg"></i>
+                            </a>
+                        </span>
+                    </div>
+                    <div class="row">
+                        {{ content }}
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="footer text-center postlist-meta">
+            Powered by <a class="link" href="https://github.com/nadjetey/wangana">Wangana</a> - Jekyll theme.
+        </footer>
     </div>
-
-
-
-    <div id="content">
-      {{ content }}
-    </div>
-
-
-
-  </div>
-
-
-
-  <footer id="footer">
-    <p class="copyright">Copyright &copy; {{ site.time | date: '%Y' }} {{ site.name }}. Powered by <a href="http://jekyllrb.com">Jekyll</a>, theme by <a href="http://www.webmaster-source.com">Matt Harzewski</a></p>
-  </footer>
-
-
-
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
-  <script src="/assets/js/jquery.mobilemenu.min.js"></script>
-
-  <script>
-    $(document).ready(function(){
-      $('#sidebar nav ul').mobileMenu({'topOptionText': 'Menu', 'prependTo': '#sidebar nav'});
-    });
-  </script>
-
-
-
-</body>
-</html>
+</main>
+{% include footer.html %}

@@ -1,14 +1,14 @@
 ---
 layout: post
 modal-id: 1
-date: 2014-12-25
+date: 2014-09-26
 img: SVO.png
 alt: image-alt
 project-date: September 2014
 category: robotics
 type: project
 title: "Performance analysis and documentation of the Semi-Direct Visual Odometry ROS package"
-description: "BSc. Internship: Performance analysis and documentation of the Semi-Direct Visual Odometry ROS package."
+description: "BSc. Internship."
 p_languages: "C++"
 ---
 

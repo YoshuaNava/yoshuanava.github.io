@@ -2,7 +2,7 @@ $(document).ready(function() {
     //Simple search part1
     $('.search-field').simpleJekyllSearch({
         jsonFile: '{{site.url}}/search.json',
-        template: '<li><time class="leaders-left timeago" datetime="{date}"></time><a href="{url}" title="{title}" class="leaders-right">{title}</a></li>',
+        template: '<li><a href="{url}" title="{title}">{title}</a> ({date})</li>',
         searchResults: '.results',
         searchResultsTitle: '#',
         noResults: '<li><span class="leaders-left">Nothing found</span> <span class="leaders-right">:(</span></li>'

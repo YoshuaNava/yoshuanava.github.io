@@ -1,50 +1,41 @@
 ---
 layout: default
-title: Solar Theme
 ---
+<div class="col-sm-12">
+    <div class="posts">
+        {% for post in site.posts %}
+			{% if post.type == "blog" %}
+				<div class="post-li">
+					<div class="col-sm-8">
+						<ul class="postlist-block">
+							<li><time class="timeago postlist-meta" datetime="{{ post.date }}">{{ post.date |  date: "%A %-d %B %Y" }}</time>
+							<a class="postlist-meta pull-right comments-meta" href="{{ post.url }}#disqus_thread">0 <i class="fa fa-comments-o fa-lg"></i></a></li>
+							<li><a class="postlist-title" href="{{ post.url }}">{{ post.title }}</a></li>
+						</ul>
+					</div>
 
-{% for post in paginator.posts %}
-	{% if post.type != "project" %}
-		<article class="post">
+					<div class="col-sm-4 hide-on-phone">
+						<ul class="postlist-block pull-right postlist-meta">
+							<li><a href="{{ post.url }}#disqus_thread">0 <i class="fa fa-comments-o fa-lg"></i></a></li>
+							<li><i><a href="{{ post.url }}">Details...</a></i></li>
+							<li><strong><a class="postlist-detail-indicator">Expand +</a></strong></li>
+						</ul>
+					</div>
 
-			{% if post.external-url %}
-				<h1>
-					<a href="{{ post.external-url }}">{{ post.title }}</a>
-					<a class="anchor" href="{{ post.url }}"><i class="icon-anchor"></i></a>
-				</h1>
-			{% else %}
-				<h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
+					<div class="col-sm-12 postlist-detail">
+						{{post.excerpt}}
+					</div>
+				</div>
 			{% endif %}
+        {% endfor %}
+    </div>
+</div>
 
-			<div class="post-content">{{ post.description }}</div>
+<script>
+    $(".post-li .postlist-detail-indicator").click(function() {
+        var preview = $(this);
+        preview.text(preview.text()=='Expand +'?'Collapse -':'Expand +');
 
-		</article>
-	{% endif %}
-
-{% endfor %}
-
-
-
-{% if paginator.total_pages > 1 %}
-	<div class="postnavigation">
-
-		{% if paginator.previous_page %}
-			{% if paginator.page == 2 %}
-				<a class="prev left" href="/">&larr; Newer</a>
-			{% else %}
-				<a class="prev left" href="/page{{paginator.previous_page}}/">&larr; Newer</a>
-			{% endif %}
-		{% else %}
-			<span class="nope left">&larr; Newer</span>
-		{% endif %}
-
-		<span class="pages">Page {{ paginator.page }} of {{ paginator.total_pages }}</span>
-
-		{% if paginator.next_page %}
-			<a class="next right" href="/page{{paginator.next_page}}/">Older &rarr;</a>
-		{% else %}
-			<span class="nope right">Older &rarr;</span>
-		{% endif %}
-
-	</div>
-{% endif %}
+        $(this).closest(".post-li").find(".postlist-detail").toggle("slow", function() {});
+    });
+</script>

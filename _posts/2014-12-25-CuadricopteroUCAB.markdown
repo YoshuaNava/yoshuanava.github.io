@@ -5,10 +5,9 @@ date: 2014-12-25
 img: TesisCuadricoptero.png
 alt: image-alt
 project-date: January 2015
-client: 
 category: robotics
 type: project
-title: Cuadricoptero UCAB
+title: "Cuadricoptero UCAB"
 description: "Low-cost quadrotor platform developed as the undergraduate thesis project of me and Luis Vicens, another student at UCAB."
 p_languages: "Arduino/Processing, Python, MATLAB"
 ---

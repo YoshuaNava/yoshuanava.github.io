@@ -1,9 +1,28 @@
 name: Yoshua Nava
-url: http://yoshuanava.github.io
-description: Informatics engineer - Future robotics researcher
+description:  Informatics engineer - Future robotics researcher
 
-permalink: /:year/:month/:day/:title/
-paginate: 10
-pygments: true
+sass:
+  sass_dir: assets/css/_sass
+  style: :compressed
 
-exclude: ['README.md', 'Gemfile.lock', 'Gemfile', 'Rakefile']
+# url: http://nadjetey.github.io
+
+owner:
+    name: Yoshua Nava
+    twitter: "http://twitter.com/popopopote"
+    youtube: "http://www.youtube.com/channel/UCbF_buNB5MRenUcW9du5RdA"
+    github: "http://github.com/yoshuanava"
+    linkedin: "http://ve.linkedin.com/in/yoshuanavachocron"
+    stack-exchange: "http://stackexchange.com/users/5531488/yoshuanava"
+    email: "yoshua.nava.chocron@gmail.com"
+    disqus_shortname: #
+
+ga_id: #
+ga_username: #
+
+permalink: /:year/:month/:title/
+timezone: SouthAmerica/Caracas
+
+markdown: redcarpet
+redcarpet:
+  extensions: ["no_intra_emphasis", "tables", "fenced_code_blocks", "autolink", "strikethrough", "superscript"]
