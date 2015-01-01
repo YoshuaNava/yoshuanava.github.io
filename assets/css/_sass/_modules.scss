@@ -8,12 +8,19 @@
 }
 
 .goto-top {
+  display: none;
   font-size: 15px !important;
   cursor: pointer;
   margin: 1px 0;
+  background: $primary-color;
+  i {
+    color: #333;
+  }
+
   &:hover,
-  &:focus {
-    background: $primary-color;
+  &:focus,
+  &:hover i {
+    color: red;
   }
 }
 
@@ -25,6 +32,18 @@
     text-decoration: none;
     color: $lnk-highlight-color;
   }
+}
+
+#twitter-ic{
+  color: #55acee !important;
+}
+
+#git-ic{
+  color: #333 !important;
+}
+
+#rss-ic{
+  color: #ff9933 !important;
 }
 
 .top-nav {
@@ -122,6 +141,10 @@ pre {
   font-weight: 700;
 }
 
+.postlist-detail-indicator{
+  cursor:pointer;
+}
+
 .page-title {
   font-size: 31px;
   font-weight: 700;
@@ -198,7 +221,10 @@ pre {
   margin: 20px 0 0;
 }
 
-#menu,
-.comments-meta {
-  display: none;
+#projects-preable {
+  font-style: italic;
+}
+
+#projects-list li {
+  margin-bottom: 10px;
 }
