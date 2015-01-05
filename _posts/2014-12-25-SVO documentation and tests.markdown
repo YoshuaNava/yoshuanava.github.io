@@ -9,7 +9,7 @@ category: robotics
 type: project
 comments: true
 title: "Performance analysis and documentation of the Semi-Direct Visual Odometry ROS package"
-description: "BSc. Internship."
+description: "Undergraduate internship."
 p_languages: "C++"
 ---
 

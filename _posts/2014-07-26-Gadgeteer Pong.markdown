@@ -9,7 +9,7 @@ category: embeddedsystems
 type: project
 comments: true
 title: "Gadgeteer Pong"
-description: "Pong game developed for the FEZ Hydra Gadgeteer boards, as part of the NCSU Embedded Systems Summer Course Project."
+description: "NCSU Embedded Systems Summer Course Project: A Pong (videogame) rendition for the FEZ Hydra Gadgeteer boards."
 p_languages: "C#"
 ---
 
