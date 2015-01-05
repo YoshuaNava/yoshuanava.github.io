@@ -8,7 +8,7 @@ project-date: January 2015
 category: embeddedsystems
 type: project
 comments: true
-title: "Pinguino UCAB"
+title: "PinguinoUCAB"
 description: "Implementation of a small set of Pinguino control boards and sensor modules."
 p_languages: "Pinguino C"
 ---
