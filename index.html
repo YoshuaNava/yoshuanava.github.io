@@ -21,7 +21,7 @@ title: Blog
 					<div class="col-sm-4 hide-on-phone">
 						<ul class="postlist-block pull-right postlist-meta">
 							<li><a href="{{ post.url }}#disqus_thread">0 <i class="fa fa-comments-o fa-lg"></i></a></li>
-							<li><strong><a class="postlist-detail-indicator">Expand +</a></strong></li>
+							<li><strong><a class="postlist-detail-indicator">Description +</a></strong></li>
 						</ul>
 					</div>
 
@@ -37,7 +37,7 @@ title: Blog
 <script>
     $(".post-li .postlist-detail-indicator").click(function() {
         var preview = $(this);
-        preview.text(preview.text()=='Expand +'?'Collapse -':'Expand +');
+        preview.text(preview.text()=='Description +'?'Collapse -':'Description +');
 
         $(this).closest(".post-li").find(".postlist-detail").toggle("slow", function() {});
     });
