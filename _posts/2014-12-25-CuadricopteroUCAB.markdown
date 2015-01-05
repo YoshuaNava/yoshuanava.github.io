@@ -73,6 +73,7 @@ Tests were performed with angular rate control only:
 src="http://www.youtube.com/watch?v=rEZYg2zQfjA"> 
 </embed> 
 
+[![Alt text for your video](http://img.youtube.com/vi/rEZYg2zQfjA/0.jpg)](http://www.youtube.com/watch?v=rEZYg2zQfjA)
 
 Finally, angular position on the Yaw axis was added:
 
