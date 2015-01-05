@@ -3,6 +3,9 @@ layout: default
 title: Blog
 ---
 <div class="col-sm-12">
+	<div class="page-title">
+		{{ page.title }}
+	</div>
     <div class="posts">
         {% for post in site.posts %}
 			{% if post.type == "blog" %}
