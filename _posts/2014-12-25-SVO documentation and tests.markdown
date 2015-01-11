@@ -18,7 +18,3 @@ which the Semi-Direct Visual Odometry Robot Operating System package was selecte
 to be implemented, tested and documented for the purpose of using it in an Autonomous
 Underwater Vehicle (AUV) in the near future.
 
-<embed width="420" height="315"
-src="http://www.youtube.com/watch?v=QoQYBjscoxM">
-
-<b>All the code, schematics and documentation were released by the Educational Robotics Group at UCAB with the Creative Commons license. You can find all the files in <a href="https://github.com/YoshuaNava/GrupoRoboticaEducativaUCAB">this GitHub repository</a> (It's in spanish) </b>
