@@ -22,7 +22,9 @@ and common-use electronic components. We used a 9DoF-IMU to measure the quadroto
 XBEE modules to communicate with the quadrotor remotely, and two LiPo batteries: one to feed the motors (~16A consumption at their maximum 
 throttle), and the other one to feed the Arduino, sensors and the quadrotor XBEE module.
 
+<img src="/projects_images/CuadricopteroUCABfront.jpg" alt="Built quadrotor" width="720">
 
+<hr>
 <h2> Electronics </h2>
 
 The quadrotor electronics design was split in two parts:
@@ -33,10 +35,16 @@ An exhaustive characterization of the response of the opto-couplers and the best
 designed taking into account the 3-cell LiPo batteries voltage so that the MOSFETs Gate voltage could be kept in an optimal range to ensure
 maximum conductivity through the MOSFETs and maximum power consumption by the motors.
 
-(((-----------------graficas de caracterizacion de los mosfets}}}}}}}
+<img src="/projects_images/CuadricopteroUCAB-MOSFETsCurrentFlow.png" alt="MOSFETs current flow as a function of Vgs" width="720">
+
+<img src="/projects_images/CuadricopteroUCAB-CircuitDesign.png" alt="Motor control circuit design" width="320">
+
+<img src="/projects_images/CuadricopteroUCAB-PWMsignals.png" alt="Motor control circuit PWM signals response" width="320">
 
 
 
+
+<hr>
 <h2> Quadrotor state estimation </h2>
 
 The state estimation of the quadrotor was divided into:
@@ -48,7 +56,9 @@ Use of the magnetometer to improve yaw angle measurement, and adjustment of the 
 discarded because of their dependency with the quadrotor's attitude measurements, which had a high level of uncertainty because of
 mechanical vibrations.
 
+<img src="/projects_images/CuadricopteroUCAB-accVibrations.png" alt="Accelerometer subject to mechanical vibrations" width="720">
 
+<hr>
 <h2> Wireless communication protocol for telemetry and remote command </h2>
 
 The <b>communication protocol</b> developed was based on the protocol used by Shane Colton used on its <a href="http://www.instructables.com/id/PCB-Quadrotor-Brushless/">PCB Brushless Quadrotor</a>.
@@ -57,6 +67,10 @@ checksum for error verification. Tests were performed to measure the transmissio
 by each message was calculated for transmission frequencies of 38400bdps and 115200 (57600bdps frequency was discarded because of a <a href="http://scolton.blogspot.com/2011/09/great-xbee-576kbps-mystery-finally.html">transmission 
 bug in the XBEE Series 1 modules</a>)
 
+
+<img src="/projects_images/CuadricopteroUCAB-TransmissionRate.png" alt="Wireless communication transmission rate" width="720">
+
+<hr>
 <h2> ROS-based ground station </h2>
 
 The ROS based ground station was composed of:
@@ -66,7 +80,7 @@ users commands messages.
 * Two nodes to write the telemetry messages received into CSV files for future analysis.
 
 
-
+<hr>
 <h2> Control systems </h2>
 
 The PID controllers were designed to stabilize the quadrotor attitude and altitude around the horizontal hovering point and respond to remote 
@@ -78,7 +92,7 @@ we developed the project). The inertia parameters were calculated based on our q
 During the control systems simulations, performed with the Euler method, and based on the linearized system we obtained succesful (Tracking and
 robustness) yet slow-convergence results, mainly due to the inertia of the quadrotor, which we unadvertedly increased by adding too much weight to it.
 
-(((-----------------control systems simulation}}}}}}}
+<img src="/projects_images/CuadricopteroUCAB-PIDfullSimulation.png" alt="Control systems simulation" width="720">
 
 The PID algorithms designed were implemented and tested on the quadrotor platform. The Pitch and Roll angular position PIDs offered an irregular
 performance due to the low-frequency vibrations on the Pitch and Roll axis. Moreover, the Arduino timers experimented resource contention because
@@ -90,17 +104,29 @@ Tests were performed with angular rate control only:
 
 Finally, angular position on the Yaw axis was added:
 
+<img src="/projects_images/CuadricopteroUCAB-vPitchPID.png" alt="Pitch control system" width="320">
+
+<img src="/projects_images/CuadricopteroUCAB-vRollPID.png" alt="Roll control system" width="320">
+
+<img src="/projects_images/CuadricopteroUCAB-vYawPID.png" alt="Yaw control system" width="320">
+
+
 (((-----------------quadrotor with angp yaw control}}}}}}}
+
+<hr>
+<h2> Accelerometer signal filtering experiment </h2>
 
 During the development of this project, signal filtering was a major issue. Low-pass, high-pass, kalman and moving average filters were implemented,
 being the moving average filters the ones that were more effective in filtering low-frequency vibrations. Just for a proof of concept the same
-type of filters were implemented for the accelerometer. Below lies some images that describe that results obtained:
+type of filters were implemented for the accelerometer.
 
 
-(((-----------------gyro signal-original and filtered}}}}}}}
+<img src="/projects_images/CuadricopteroUCAB-accHeavyAvgFiltering.png" alt="Accelerometer filtered signals" width="720">
 
-(((-----------------accelerometer signal-original and filtered}}}}}}}
+<hr>
+<h2> General System diagram (in Spanish) </h2>
 
+<img src="/projects_images/CuadricopteroUCAB-SystemDiagram.png" alt="General system diagram" width="720">
 
 
 <hr>
