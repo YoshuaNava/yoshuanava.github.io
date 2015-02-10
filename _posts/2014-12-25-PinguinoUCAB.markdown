@@ -21,17 +21,23 @@ Based on the requirements of the group, the <a href="https://github.com/Pinguino
 was choosen to be the first prototype. We built one (the board on the photo following this text), and tested it.
 
 <img src="/projects_images/PinguinoBase4550.jpg" alt="Build Pinguino Base 4550 board" width="320">
+[![Build Pinguino Base 4550 board](/projects_images/PinguinoBase4550.jpg)](/projects_images/PinguinoBase4550.jpg)
 
 We presented the Pinguino Base 4550 board to the Educational Robotics Group, and were asked to reduce the boards size if possible, so
 as to diminish its overall cost and use of PCB. We modified the circuit schematics to reduce costs by decreasing its total size and 
 removing the ICSP headers. The modified boards were called "PinguinoUCAB".
 
-<img src="/projects_images/SizeComparisonPinguinoUCAB.jpg" alt="Size comparison between the Pinguino Base 4550 and the PinguinoUCAB boards" width="320">
+
+Size comparison between the Pinguino Base 4550 and the PinguinoUCAB boards:
+[![Size comparison between the Pinguino Base 4550 and the PinguinoUCAB boards](/projects_images/SizeComparisonPinguinoUCAB.jpg)](/projects_images/SizeComparisonPinguinoUCAB.jpg)
+
 
 Two prototypes of the PinguinoUCAB boards were built before a major economic unforeseen situation totally reduced the Educational Robotics
 Group funds for the project.
 
-<img src="/projects_images/BuiltPinguinoUCAB.jpg" alt="Built PinguinoUCAB board" width="320">
+
+[![Built PinguinoUCAB board](/projects_images/BuiltPinguinoUCAB.jpg)](/projects_images/BuiltPinguinoUCAB.jpg)
+
 
 Without funds, we agreed with the Educational Robotics Group to dedicate our efforts recording a video tutorial describing the construction
 process so that the boards could be easily reproduced by the members of the Educational Robotics Group.
