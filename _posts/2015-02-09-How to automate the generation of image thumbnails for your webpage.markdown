@@ -13,10 +13,11 @@ title: "How to automate the generation of image thumbnails for your webpage (Ubu
 description: "Bash script to automatically generate image thumbnails for your webpage using imagemagick"
 p_languages: "Bash"
 ---
-
+<p style='text-align: justify;'>
 If you're making your own webpage, you might have gone through the process of manually generating a reduced version of your images to
-make your page load faster. I developed a bash script to automate this process with ImageMagick. In the following lines I describe
-how to install ImageMagick, and how to execute the script:
+make your page load faster. I developed a bash script to automate this process with ImageMagick. In the following lines of this article 
+I describe how to install ImageMagick, and how to execute the script.
+</p>
 
 <hr>
 <h2> Installation </h2>
@@ -46,17 +47,18 @@ done
 
 Explanation: 
 
+
 * The first line tells the interpreter that we are executing a <a href="http://www.linux.com/learn/tutorials/284789-writing-a-simple-bash-script-">bash script</a>.
+
 * A <a href="http://tldp.org/HOWTO/Bash-Prog-Intro-HOWTO-7.html">bash loop</a> goes through every fileName in your folder (assuming that 
 there are only images in it, in any format), and does the following:
-	* Generates the thumbnail by executing the command "$( convert -thumbnail 640 $fileName thumb.$fileName )". The command starts with "convert",
-	which is a call to the imagemagick tool. -thumbnail is a command to transform the files into thumbnails with a <b>width of 640 pixels</b> 
-	(you can change this parameter to modify the width of the generated thumbnails). $fileName is the name of the file that is going to be processed,
-	 and thumb.$fileName is the name of the thumbnail file (This means that, for example, after executing the script, a file called image.jpg would 
-	 have a thumbnail called thumb.image.jpg)
-	* Tells you if the thumbnails was succesfully generated or if an error happened in the process (something that would normally happen if you have 
+	* Generates the thumbnail by executing the command "$( convert -thumbnail 640 $fileName thumb.$fileName )". After executing the script, a 
+	file called image.jpg would have a 640 thumbnail called thumb.image.jpg. In the version of the script showed in this page thumbnails have 
+	a <b>width of 640 pixels</b>, you can change this number to modify the width of your generated thumbnails. 
+	* Tells you if the thumbnail was succesfully generated or if an error happened in the process (something that would normally happen if you have 
 	non-image type files in the folder where the script is being executed.) -to do that, the content of the $ variable is used, as described
 	<a href="http://askubuntu.com/questions/29370/how-to-check-if-a-command-succeeded">here</a>
+
 
 <b>3)</b> Open a terminal, and change the directory (with the <a href="http://www.linfo.org/cd.html">cd command</a>) to the folder where 
 your image and script files are allocated.
@@ -73,5 +75,5 @@ chmod +x GenerateThumbnailsImageMagick.sh
 {% highlight bash %}
 ./GenerateThumbnailsImageMagick.sh
 {% endhighlight %}
-
+</p>
 
