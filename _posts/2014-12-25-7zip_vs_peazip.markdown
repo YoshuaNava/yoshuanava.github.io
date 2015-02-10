@@ -8,7 +8,7 @@ project-date: January 2014
 category: other
 type: project
 comments: true
-title: "Performance comparison between file compression tools 7-Zip and PeaZip"
+title: "Performance comparison between file compression tools 7-Zip and PeaZip <b>(Article under construction)</b>"
 description: "Informatics Systems Evaluation course final project"
 p_languages: ""
 ---

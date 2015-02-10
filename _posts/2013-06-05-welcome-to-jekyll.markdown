@@ -2,7 +2,8 @@
 layout: post
 title:  "Welcome to Jekyll!"
 date:   2013-06-05 17:06:25
-type: blog
+type: "blog"
+publish: "true"
 categories: jekyll update
 ---
 

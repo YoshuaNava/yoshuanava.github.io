@@ -8,7 +8,7 @@ project-date: January 2015
 category: other
 type: project
 comments: true
-title: "Guitar pedals: Ibanez Sonic Distortion SD9 clone"
+title: "Guitar pedals: Ibanez Sonic Distortion SD9 clone <b>(Article under construction)</b>"
 description: ""
 p_languages: ""
 ---

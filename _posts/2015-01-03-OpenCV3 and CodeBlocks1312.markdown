@@ -7,7 +7,8 @@ alt: image-alt
 project-date:
 type: blog
 category: computervision
-comments: true
+comments: "true"
+publish: "true"
 title: "How to install OpenCV 3.0 beta and link it to Code::Blocks projects under Ubuntu 14.04"
 description: "Tutorial that describes how to install OpenCV 3.0 beta, and work with Code::Blocks in Ubuntu 14.04"
 p_languages: ""

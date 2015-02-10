@@ -7,7 +7,8 @@ alt: image-alt
 project-date:
 type: blog
 category: books
-comments: true
+comments: "true"
+publish: "false"
 title: "MOOC: Underactuated robotics on edX"
 description: "Personal review of this awesome online course about nonlinear systems, optimal control and motion planning"
 p_languages: ""

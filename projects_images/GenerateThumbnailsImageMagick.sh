@@ -1,7 +1,7 @@
 #! /bin/bash
 
 for fileName in $( ls ); do
-	$( convert -thumbnail 640 $fileName thumb.$fileName )
+	$( convert -thumbnail 480 $fileName thumb.$fileName )
 	if [ $? -eq 0 ]; then
 		echo "$fileName thumbnail generated."
 	else

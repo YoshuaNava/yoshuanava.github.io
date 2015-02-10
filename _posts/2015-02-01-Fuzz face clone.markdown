@@ -8,7 +8,7 @@ project-date: July 2014
 category: other
 type: project
 comments: true
-title: "Guitar pedals: Fuzz Face solid state clone"
+title: "Guitar pedals: Fuzz Face solid state clone <b>(Article under construction)</b>"
 description: 
 p_languages: ""
 ---

@@ -7,8 +7,9 @@ alt: image-alt
 project-date:
 type: blog
 category: miscellaneous
-comments: true
-title: "How to automate the generation of image thumbnails for your webpage under Ubuntu"
+comments: "true"
+publish: "true"
+title: "How to automate the generation of image thumbnails for your webpage (Ubuntu/Debian)"
 description: "Bash script to automatically generate image thumbnails for your webpage using imagemagick"
 p_languages: "Bash"
 ---

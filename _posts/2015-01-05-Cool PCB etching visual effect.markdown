@@ -7,7 +7,8 @@ alt: image-alt
 project-date:
 type: blog
 category: embeddedsystems
-comments: true
+comments: "true"
+publish: "true"
 title: "Cool PCB etching visual effect"
 description: "An interesting (oxidation?) visual effect captured while etching a PCB with Iron Chloride"
 p_languages: ""
