@@ -43,7 +43,7 @@ that satisfied the project requirements, and present them to the UCAB Educationa
 
 <br>
 
-1. To <b>build a set of barebones <a href="http://arduino.cc/en/Main/arduinoBoardUno">Arduino UNO boards</a></b>, on one-sided PCB's, as in this <a href="http://www.instructables.com/id/How-to-make-your-own-Arduino-board/">Instructable</a>.
+1. To <b>build a small set of barebones <a href="http://arduino.cc/en/Main/arduinoBoardUno">Arduino UNO boards</a></b>, on one-sided PCB's, as in this <a href="http://www.instructables.com/id/How-to-make-your-own-Arduino-board/">Instructable</a>.
 	* Pros: The Arduino platform is Open Hardware, highly developed, and has plenty of support <u>(Satisfies Req.#1)</u>. ATMEGA 328P and its
 	other componentes are available in the Venezuelan market at a cheap price <u>(Satisfies Req.#2)</u>. Boards are really easy to build 
 	<u>(Satisfies Req.#4)</u>,can be fed with a 9V battery (Satisfies Req.#6), sturdy <u>(Satisfies Req.#5)</u>, and are native-Arduino boards 
@@ -53,26 +53,41 @@ that satisfied the project requirements, and present them to the UCAB Educationa
 	board (to act as FTDI), which isn't simple enough to be used by the non-technical members of the group; or to modify the original
 	Arduino UNO design by adding a MAX232 chip (difficult to find in Venezuela) to bridge the serial communication gap, as depicted 
 	<a href="http://chuckontech.com/?p=147">here</a>. <u>(Doesn't satisfy Req.#3)</u>
-2. To <b>build a set of 8-bit <a href="http://wiki.pinguino.cc/index.php/Main_Page">Pinguino boards</a></b>, as the <a href="http://wiki.pinguino.cc/index.php/PIC18F2550_Pinguino">Pinguino 2550</a> or 
-the <a href="http://wiki.pinguino.cc/index.php/PIC18F4550_Pinguino">Pinguino 4550</a>.
+2. To <b>build a small set of 8-bit <a href="http://wiki.pinguino.cc/index.php/Main_Page">Pinguino boards</a></b>, as the <a href="http://wiki.pinguino.cc/index.php/PIC18F2550_Pinguino">Pinguino 2550</a>, 
+the <a href="http://wiki.pinguino.cc/index.php/PIC18F4550_Pinguino">Pinguino 4550</a> and the <a href="https://github.com/PinguinoBase/Pinguino-Base-4550">Pinguino Base 4550</a>.
 	* Pros: The Pinguino project is an Open Hardware project, has a committed community of developers behind it, and has been experimenting
-	constant growth (Satisfies Req.#1). The required electronic components are really cheap and easy to find in Venezuela (Satisfies Req.#2).
+	constant growth <u>(Satisfies Req.#1)</u>. The required electronic components are really cheap and easy to find in Venezuela <u>(Satisfies Req.#2)</u>.
 	Boards are really easy to build, and as sturdy as the barebones Arduino UNO, and can be easier to repair, as the integrated USB-interface 
-	in the PIC 18F2550 and 18F4550 chips considerably reduce the number of integrated circuits on the board (Satisfies Reqs.#4,5). The Pinguino
-	2550 and 4550 microcontroller include an integrated USB interface that simplifies the process installing and programming the boards, and are
-	compatible with the official Pinguino IDE, which greatly resembles the Arduino IDE, and includes features as code completion (Satisfies Req.#3).
-	The boards can be easily fed by a 9V battery (Satisfies Req.#6). Finally, the Pinguino boards have many similarities with the Arduino UNO
-	boards, as depicted <a href="http://wiki.pinguino.cc/index.php/Pic18f2550_vs_atmega328">here</a>.
+	in the PIC 18F2550 and 18F4550 chips considerably reduce the number of integrated circuits on the board <u>(Satisfies Reqs.#4,5)</u>. The Pinguino
+	2550 and 4550 microcontroller bootloaders can be programmed with PIC programmers available in UCAB Informatics and Telecommunicacion Engineering
+	laboratories, both chips include an integrated USB interface that simplifies the process installing and programming the boards, and are
+	compatible with the official Pinguino IDE, which greatly resembles the Arduino IDE, and includes features as code completion) <u>(Satisfies Req.#3)</u>.
+	The boards can be easily fed by a 9V battery) <u>(Satisfies Req.#6)</u>. Finally, the Pinguino boards have many similarities with the Arduino UNO
+	boards, as depicted <a href="http://wiki.pinguino.cc/index.php/Pic18f2550_vs_atmega328">here</a>. <u>(Satisfies Req.#7)</u>
 	* Cons: The Pinguino IDE lacks a graphical interface to read data being received through the Serial port, and a third-party
 	application like <a href="http://www.chiark.greenend.org.uk/~sgtatham/putty/">PuTTY</a> is required to stablish Serial communication 
-	with the boards on Windows. (
+	with the boards on Windows. The users and developers community is really small in comparisson with the community that supports the Arduino, 
+	information about the boards is not as organized and homogeneous, and the Pinguino project isn't nearly as developed as the Arduino project. 
+	Not all shields and peripherals built for the Arduino UNO are compatible with the Pinguino boards.
+	
+
+<br>
+<p style='text-align: justify;'>
+After presenting the two solution proposals, the director of the UCAB Educational Robotics Group chose the one that involved building a 
+small set of Pinguino boards, because if satisfied all the project requirements, serial communication and additional peripherals where not a 
+priority for them, and, as they would use the boards for teaching very basic electronics and robotics concepts to the kids, that would reduce the 
+need of community support.
+</p>
+
+
 <br>
 <hr>
-<h2> The control boards </h2>
+<h2> The Pinguino control boards </h2>
 
 <p style='text-align: justify;'>
-The <a href="https://github.com/PinguinoBase/Pinguino-Base-4550">Pinguino Base 4550 board</a> was selected among the solution 
-alternatives because it was the board that further satisfied all the group requirements, and a first prototype was built and tested:
+Among the 8-bit Pinguino boards the <a href="https://github.com/PinguinoBase/Pinguino-Base-4550">Pinguino Base 4550 board</a> was 
+selected because it includes a voltage regulator, and has more digital and analog ports than the Pinguino 2550 board. A prototype 
+of the Pinguino Base 4550 was then built and tested:
 </p>
 
 <br>
@@ -99,14 +114,15 @@ Group funds for the project.
 </p>
 
 
-<hr>
-<h2> Boards construction video tutorial </h2>
-<br>
-
 <em>Built PinguinoUCAB board:</em>
 [![Built PinguinoUCAB board](/projects_images/thumb.PinguinoUCAB-BuiltPUCAB.jpg)](/projects_images/PinguinoUCAB-BuiltPUCAB.jpg)
 
 <br>
+
+
+<hr>
+<h2> Boards construction video tutorial </h2>
+
 <p style='text-align: justify;'>
 Without funds, we agreed with the Educational Robotics Group to dedicate ourselves to produce a video tutorial describing the construction
 process so that the boards could be easily reproduced by the members of the Educational Robotics Group.
@@ -119,10 +135,9 @@ process so that the boards could be easily reproduced by the members of the Educ
 
 <b>(YouTube video. Click on the image to be redirected to YouTube)</b>
 
-
+<br>
 <hr>
 <h2> Motor control and sensors modules </h2>
-<br>
 <p style='text-align: justify;'>
 A set of touch sensors, transistor-based DC motor control circuits and Light-Detection-Resistances was arranged on a PCB to test the Pinguino 
 boards and serve as the first prototype of a low-cost learn-electronics-with-pinguino kit that is going to be developed in the future by the 
@@ -133,11 +148,24 @@ Educational Robotics Group.
 <em>Motor control and sensors module prototype:</em>
 [![Motor control and sensors module prototype](/projects_images/thumb.PinguinoUCAB-MotorsSensorsModule.jpg)](/projects_images/PinguinoUCAB-MotorsSensorsModule.jpg)
 
+<br>
 <hr>
 
 <h2> Miscellaneous videos </h2>
 
+<em>LED blinking while waiting for a new program to be uploaded:</em>
 
+[![LED blinking while waiting for a new program to be uploaded ](http://img.youtube.com/vi/WXtJsBcvUz4/0.jpg)](http://www.youtube.com/watch?v=WXtJsBcvUz4)
+
+<br>
+<br>
+<em>Blink (1 second period) example :</em>
+
+[![Blink (1 second period) example](http://img.youtube.com/vi/80TNpihYQI0/0.jpg)](http://www.youtube.com/watch?v=80TNpihYQI0)
+
+
+<br>
+<br>
 <hr>
 
 <b>All the code, schematics and documentation were released by the Educational Robotics Group at UCAB with the Creative Commons license. You can find all the files in <a href="https://github.com/YoshuaNava/GrupoRoboticaEducativaUCAB">this GitHub repository</a> (It's in spanish) </b>
