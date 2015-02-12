@@ -15,14 +15,14 @@ p_languages: "Pinguino C"
 <h2> Overview </h2>
 <p style='text-align: justify;'>
 During my undergraduate studies, I worked with Jonathan Teixeira, another student at UCAB, and the 
-<a href="http://w2.ucab.edu.ve/re_presentacion.html">Educational Robotics Group at UCAB</a> to implement a small set of <a href="http://pinguino.cc/">Pinguino control boards</a>. The Pinguino 
-boards were choosen because they were very easy to manipulate, program and repair, and their electronic components were cheap
-and constantly available in the Venezuelan market.
+<a href="http://w2.ucab.edu.ve/re_presentacion.html">Educational Robotics Group at UCAB</a> to implement a small set of electronic 
+control boards like the Arduino UNO. The Pinguino boards were choosen mainly because they were very sturdy, easy to build, program and repair, 
+and their electronic components were cheap and constantly available in the Venezuelan market.
 </p>
 
 <hr>
 <h2> Project requirements and solution alternatives </h2>
-We had a reunion with the UCAB Educational Robotics Group director in which we identified the following <b>technical requirements</b> for the 
+At the start of the project we had an initial reunion with the UCAB Educational Robotics Group director in which we identified the following <b>technical requirements</b> for the 
 control boards to be built (ordered by priority):
 
 <br>

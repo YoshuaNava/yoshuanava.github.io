@@ -56,8 +56,8 @@ there are only images in it, in any format), and does the following:
 	file called image.jpg would have a 640 thumbnail called thumb.image.jpg. In the version of the script showed in this page thumbnails have 
 	a <b>width of 640 pixels</b>, you can change this number to modify the width of your generated thumbnails. 
 	* Tells you if the thumbnail was succesfully generated or if an error happened in the process (something that would normally happen if you have 
-	non-image type files in the folder where the script is being executed.) -to do that, the content of the $ variable is used, as described
-	<a href="http://askubuntu.com/questions/29370/how-to-check-if-a-command-succeeded">here</a>
+	non-image type files in the folder where the script is being executed.) -To know if the command was succesfully executed, the content of the $ 
+	variable is used, as described 	<a href="http://askubuntu.com/questions/29370/how-to-check-if-a-command-succeeded">here</a>
 
 
 <b>3)</b> Open a terminal, and change the directory (with the <a href="http://www.linfo.org/cd.html">cd command</a>) to the folder where 
