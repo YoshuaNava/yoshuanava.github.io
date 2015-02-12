@@ -16,8 +16,11 @@ p_languages: "Pinguino C"
 <p style='text-align: justify;'>
 During my undergraduate studies, I worked with Jonathan Teixeira, another student at UCAB, and the 
 <a href="http://w2.ucab.edu.ve/re_presentacion.html">Educational Robotics Group at UCAB</a> to implement a small set of electronic 
-control boards like the Arduino UNO. The Pinguino boards were choosen mainly because they were very sturdy, easy to build, program and repair, 
-and their electronic components were cheap and constantly available in the Venezuelan market.
+control boards like the Arduino UNO. The Pinguino Base 2550 boards were choosen, implemented (and later slightly modified), because they were 
+sturdy, easy to build, program and repair; and their electronic components were cheap and constantly available in the Venezuelan 
+market. A set of sensors and motor control modules was also implemented to serve as a first prototype of a kit to teach basic
+electronics and robotics to kids in Venezuelan public schools.
+
 </p>
 
 <hr>

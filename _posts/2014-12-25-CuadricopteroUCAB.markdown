@@ -274,17 +274,23 @@ Finally, angular position on the Yaw axis was added:
 
 (((-----------------quadrotor with angp yaw control}}}}}}}
 
+<br>
+<hr>
+<h2> Results </h2>
+
+<br>
+<hr>
+<h2> Conclusions and remarks </h2>
 
 
-
+<br>
 <hr>
 <h2> General System diagram (in Spanish) </h2>
 
 [![](/projects_images/thumb.CuadricopteroUCAB-SystemDiagram.png)](/projects_images/CuadricopteroUCAB-SystemDiagram.png)
 
 
-
+<br>
+<br>
 <hr>
-
-
 <b>All the code, schematics and documentation were released under the MIT license so that other people can freely work with it, and improve it. You can find all the files in <a href="https://github.com/YoshuaNava/TesisCuadricoptero">this GitHub repository</a> (It's in spanish) </b>
