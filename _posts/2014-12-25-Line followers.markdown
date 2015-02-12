@@ -8,7 +8,7 @@ project-date: September 2013
 category: robotics
 type: project
 comments: true
-title: "Line followers"
+title: "CCSBOTS2013 Line Follower <b>(Article under construction)</b>"
 description: "Built to participate in the Venezuelan national robotics competitions."
 p_languages: "Arduino/Processing"
 ---

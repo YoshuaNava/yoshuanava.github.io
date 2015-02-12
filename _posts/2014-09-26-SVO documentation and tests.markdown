@@ -8,7 +8,7 @@ project-date: September 2014
 category: robotics
 type: project
 comments: true
-title: "Performance analysis and documentation of the Semi-Direct Visual Odometry ROS package"
+title: "Performance analysis and documentation of the Semi-Direct Visual Odometry ROS package <b>(Article under construction)</b>"
 description: "Undergraduate internship project."
 p_languages: "C++"
 ---
