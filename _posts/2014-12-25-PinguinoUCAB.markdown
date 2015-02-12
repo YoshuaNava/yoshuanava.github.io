@@ -14,20 +14,71 @@ p_languages: "Pinguino C"
 ---
 <h2> Overview </h2>
 <p style='text-align: justify;'>
-As part of my mandatory communitary service I worked with Jonathan Teixeira, another student, and the Educational Robotics Group 
-at UCAB to implement a small set of <a href="http://pinguino.cc/">Pinguino control boards</a>. The Pinguino boards were choosen 
-because their electronic components could be found in the Venezuelan market.
+During my undergraduate studies, I worked with Jonathan Teixeira, another student at UCAB, and the 
+<a href="http://w2.ucab.edu.ve/re_presentacion.html">Educational Robotics Group at UCAB</a> to implement a small set of <a href="http://pinguino.cc/">Pinguino control boards</a>. The Pinguino 
+boards were choosen because they were very easy to manipulate, program and repair, and their electronic components were cheap
+and constantly available in the Venezuelan market.
 </p>
 
+<hr>
+<h2> Project requirements and solution alternatives </h2>
+We had a reunion with the UCAB Educational Robotics Group director in which we identified the following <b>technical requirements</b> for the 
+control boards to be built (ordered by priority):
+
+<br>
+
+1. Preferably follow existing, tested and widely known Open Hardware projects.
+2. Electronic components should be cheap and available in the Venezuelan market.
+3. Installation and programming processes as simple as possible. Control boards should have a graphical tool for programming, 
+like the Arduino IDE.
+4. Easy construction process. No need for specialized machines to manufacture the PCB or solder the components.
+5. Rather robust construction, as they were going to be used with kids.
+6. Possibility of being fed with a commercial 9V battery.
+7. As similar as possible to the Arduino UNO boards.
+
+<br>
+
+An investigation was conducted to identify existing Open Hardware control boards projects, propose two different solutions 
+that satisfied the project requirements, and present them to the UCAB Educational Robotics Group. The solutions were:
+
+<br>
+
+1. To <b>build a set of barebones <a href="http://arduino.cc/en/Main/arduinoBoardUno">Arduino UNO boards</a></b>, on one-sided PCB's, as in this <a href="http://www.instructables.com/id/How-to-make-your-own-Arduino-board/">Instructable</a>.
+	* Pros: The Arduino platform is Open Hardware, highly developed, and has plenty of support <u>(Satisfies Req.#1)</u>. ATMEGA 328P and its
+	other componentes are available in the Venezuelan market at a cheap price <u>(Satisfies Req.#2)</u>. Boards are really easy to build 
+	<u>(Satisfies Req.#4)</u>,can be fed with a 9V battery (Satisfies Req.#6), sturdy <u>(Satisfies Req.#5)</u>, and are native-Arduino boards 
+	<u>(Satisfies Req.#7)</u>.
+	* Cons: As the ATMEGA 328P doesn't have an integrated USB interface, the group would need to have either a FTDI Serial-to-USB 
+	board (like <a href="http://www.jameco.com/webapp/wcs/stores/servlet/Product_10001_10001_2117341_-1">this one</a>, another Arduino UNO
+	board (to act as FTDI), which isn't simple enough to be used by the non-technical members of the group; or to modify the original
+	Arduino UNO design by adding a MAX232 chip (difficult to find in Venezuela) to bridge the serial communication gap, as depicted 
+	<a href="http://chuckontech.com/?p=147">here</a>. <u>(Doesn't satisfy Req.#3)</u>
+2. To <b>build a set of 8-bit <a href="http://wiki.pinguino.cc/index.php/Main_Page">Pinguino boards</a></b>, as the <a href="http://wiki.pinguino.cc/index.php/PIC18F2550_Pinguino">Pinguino 2550</a> or 
+the <a href="http://wiki.pinguino.cc/index.php/PIC18F4550_Pinguino">Pinguino 4550</a>.
+	* Pros: The Pinguino project is an Open Hardware project, has a committed community of developers behind it, and has been experimenting
+	constant growth (Satisfies Req.#1). The required electronic components are really cheap and easy to find in Venezuela (Satisfies Req.#2).
+	Boards are really easy to build, and as sturdy as the barebones Arduino UNO, and can be easier to repair, as the integrated USB-interface 
+	in the PIC 18F2550 and 18F4550 chips considerably reduce the number of integrated circuits on the board (Satisfies Reqs.#4,5). The Pinguino
+	2550 and 4550 microcontroller include an integrated USB interface that simplifies the process installing and programming the boards, and are
+	compatible with the official Pinguino IDE, which greatly resembles the Arduino IDE, and includes features as code completion (Satisfies Req.#3).
+	The boards can be easily fed by a 9V battery (Satisfies Req.#6). Finally, the Pinguino boards have many similarities with the Arduino UNO
+	boards, as depicted <a href="http://wiki.pinguino.cc/index.php/Pic18f2550_vs_atmega328">here</a>.
+	* Cons: The Pinguino IDE lacks a graphical interface to read data being received through the Serial port, and a third-party
+	application like <a href="http://www.chiark.greenend.org.uk/~sgtatham/putty/">PuTTY</a> is required to stablish Serial communication 
+	with the boards on Windows. (
+<br>
+<hr>
+<h2> The control boards </h2>
+
 <p style='text-align: justify;'>
-Based on the requirements of the group, the <a href="https://github.com/PinguinoBase/Pinguino-Base-4550">Pinguino Base 4550 board</a>
-was choosen to be the first prototype. We built one (the board on the photo following this text), and tested it.
+The <a href="https://github.com/PinguinoBase/Pinguino-Base-4550">Pinguino Base 4550 board</a> was selected among the solution 
+alternatives because it was the board that further satisfied all the group requirements, and a first prototype was built and tested:
 </p>
 
 <br>
 
 <em>Built Pinguino Base 4550 board:</em>
-[![Built Pinguino Base 4550 board](/projects_images/thumb.PinguinoBase4550.jpg)](/projects_images/PinguinoBase4550.jpg)
+[![Built Pinguino Base 4550 board](/projects_images/thumb.PinguinoUCAB-BuiltPBase4550.jpg)](/projects_images/PinguinoUCAB-BuiltPBase4550.jpg)
 
 <br>
 <p style='text-align: justify;'>
@@ -39,7 +90,7 @@ removing the ICSP headers. The modified boards were called "PinguinoUCAB".
 <br>
 
 <em>Size comparison between the Pinguino Base 4550 and the PinguinoUCAB boards:</em>
-[![Size comparison between the Pinguino Base 4550 and the PinguinoUCAB boards](/projects_images/thumb.SizeComparisonPinguinoUCAB.jpg)](/projects_images/SizeComparisonPinguinoUCAB.jpg)
+[![Size comparison between the Pinguino Base 4550 and the PinguinoUCAB boards](/projects_images/thumb.PinguinoUCAB-PinguinoBoardsSizeComparison.jpg)](/projects_images/PinguinoUCAB-PinguinoBoardsSizeComparison.jpg)
 
 <br>
 <p style='text-align: justify;'>
@@ -47,10 +98,13 @@ Two prototypes of the PinguinoUCAB boards were built before a major economic unf
 Group funds for the project.
 </p>
 
+
+<hr>
+<h2> Boards construction video tutorial </h2>
 <br>
 
 <em>Built PinguinoUCAB board:</em>
-[![Built PinguinoUCAB board](/projects_images/thumb.BuiltPinguinoUCAB.jpg)](/projects_images/BuiltPinguinoUCAB.jpg)
+[![Built PinguinoUCAB board](/projects_images/thumb.PinguinoUCAB-BuiltPUCAB.jpg)](/projects_images/PinguinoUCAB-BuiltPUCAB.jpg)
 
 <br>
 <p style='text-align: justify;'>
@@ -65,15 +119,19 @@ process so that the boards could be easily reproduced by the members of the Educ
 
 <b>(YouTube video. Click on the image to be redirected to YouTube)</b>
 
+
+<hr>
+<h2> Motor control and sensors modules </h2>
 <br>
 <p style='text-align: justify;'>
 A set of touch sensors, transistor-based DC motor control circuits and Light-Detection-Resistances was arranged on a PCB to test the Pinguino 
 boards and serve as the first prototype of a low-cost learn-electronics-with-pinguino kit that is going to be developed in the future by the 
-Educational Robotics Group. Finally, we wrote manuals for building and programming the boards,
+Educational Robotics Group. 
 </p>
 
 
-----photo of the modules!!!!!!
+<em>Motor control and sensors module prototype:</em>
+[![Motor control and sensors module prototype](/projects_images/thumb.PinguinoUCAB-MotorsSensorsModule.jpg)](/projects_images/PinguinoUCAB-MotorsSensorsModule.jpg)
 
 <hr>
 
