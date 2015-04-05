@@ -119,7 +119,7 @@ mkdir ~/BBBlack_Ubuntu1404
 cd ~/BBBlack_Ubuntu1404
 {% endhighlight %}
 
-<b>2.</b> Download Ubuntu 14.04 for ARM by typing:
+<b>2.</b> Download Ubuntu 14.04 ARM for Beaglebone Black by typing:
 {% highlight bash %}
 wget http://s3.armhf.com/dist/bone/ubuntu-trusty-14.04-rootfs-3.14.4.1-bone-armhf.com.tar.xz
 {% endhighlight %}
