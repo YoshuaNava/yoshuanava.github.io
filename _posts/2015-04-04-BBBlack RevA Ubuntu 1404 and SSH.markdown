@@ -222,11 +222,12 @@ echo 1 | sudo tee /proc/sys/net/ipv4/ip_forward > /dev/null
 
 <b>2.</b> Connect to your Beaglebone Black through SSH and type the following command:
 {% highlight bash %}
-sudo nano /etc/resolv.conf
+sudo nano /etc/network/interfaces
 {% endhighlight %}
-Then, add this line to make the Beaglebone Black starts use the Google DNS:
-nameserver 8.8.8.8
-
+Then, below "gateway 192.168.7.1" add this line to make the Beaglebone Black start using the Google DNS:
+{% highlight bash %}
+dns-nameservers 8.8.8.8
+{% endhighlight %}
 
 <b>3.</b> Test your access to the internet by typing "ping www.google.com" in a terminal. If everything went alright, you should get something like 
 "64 bytes from 201-248-78-241.dyn.dsl.cantv.net (201.248.78.241): icmp_seq=1 ttl=58 time=10.8 ms
@@ -237,9 +238,10 @@ nameserver 8.8.8.8
 <br>
 <hr>
 <h2> Final remarks </h2>
-I hope this tutorial helps other people in the same situation I was. Being able to install Ubuntu 14.04 ARM in the Beaglebone Black Rev-A, which didn't have e-MMC,
- is something that I think that can be really helpful if you are working on robotics and you want to use ROS with the extraordinary Beaglebone Black!
+I hope this tutorial helps other people in the same situation I was. Being able to install Ubuntu 14.04 ARM in the Beaglebone Black Rev-A, which doesn't have e-MMC memory,
+ is something that I think that can be really helpful if you are working on robotics and you want to use ROS with this awesome embedded computer.
  
 
-If you have any problem, write a comment below, or send me an e-mail.
+
+If you have any problem, write a comment below, or send me an e-mail. I'll be happy to help you.
 
