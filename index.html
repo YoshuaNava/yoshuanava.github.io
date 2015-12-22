@@ -1,25 +1,9 @@
 ---
 layout: page
-title: Blog
-description: Page with links to all articles of the blog
-theme: green
+title: Hi, I am Yoshua Nava
+description: About Me page of Yoshua Nava
+theme: purple
 ---
 <head>
-	<meta http-equiv="refresh" content="0;url={{ site.url }}/blog/" />
+	<meta http-equiv="refresh" content="0;url={{ site.url }}/about/" />
 </head>
-    <ul>
-      {% for post in site.posts %}
-        {% if post.type == "blog" and post.publish == "true" %}
-          {% unless post.next %}
-            <h3>{{ post.date | date: '%Y' }}</h3>
-          {% else %}
-            {% capture year %}{{ post.date | date: '%Y' }}{% endcapture %}
-            {% capture nyear %}{{ post.next.date | date: '%Y' }}{% endcapture %}
-            {% if year != nyear %}
-              <h3>{{ post.date | date: '%Y' }}</h3>
-            {% endif %}
-          {% endunless %}
-          <li class="alink"><a href="{{ post.url }}" class="green-link">{{ post.title }}</a></li>
-        {% endif %}
-      {% endfor %}
-    </ul>
