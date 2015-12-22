@@ -11,14 +11,15 @@ theme: purple
 
 Among many topics in robotics, I'm specially interested in:
 
-* <b>Computer vision</b>: visual SLAM, superpixel oversegmentation and deep learning. 
+* <b>Computer vision</b>: visual SLAM, image oversegmentation and deep learning. 
 
 * <b>Optimal control theory</b>: nonlinear systems analysis, trajectory optimization.
 
+<br>
+
 In my free time I enjoy participating in MOOC's (Massive Open Online Courses), building robots, studying mathematics, running, playing soccer, playing the guitar, hanging out with friends, and reading.
 
-
-### Contact Me
+<br>
 
 <p>If you wish to contact me, feel free to send an e-mail to <a href="mailto:yoshua.nava.chocron@gmail.com">yoshua.nava.chocron@gmail.com</a></p>
 
