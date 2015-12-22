@@ -9698,10 +9698,10 @@ show.click(function () {
 var table = $('<table>');
 table.append('<tr>');
 table.append('<td>');
-table.append(show);
+table.append(hide);
 table.append('</td>');
 table.append('<td>');
-table.append(hide);
+table.append(show);
 table.append('</td>');
 table.append('</tr>');
 table.append('</table>');
