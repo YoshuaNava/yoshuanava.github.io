@@ -14,6 +14,7 @@ I have a passion for mathematics and robotics, and my main dream and goal in lif
 
 <br>
 <br>
+<hr/>
 <!-- Skills -->
 <section class="row">
 	<header class="col-md-3">
@@ -93,6 +94,8 @@ I have a passion for mathematics and robotics, and my main dream and goal in lif
 		</ul>
 	</div>
 </section>
+<hr/>
+<!-- Teaching -->
 <section class="row">
 	<header class="col-md-3">
 		<h3 style="text-transform:uppercase;color:gray">Teaching Experience</h3>
@@ -112,6 +115,7 @@ I have a passion for mathematics and robotics, and my main dream and goal in lif
 		</ul>
 	</div>
 </section>
+<hr/>
 
 <br>
 <br>
