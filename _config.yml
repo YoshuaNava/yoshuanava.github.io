@@ -16,7 +16,7 @@ description:      'Personal webpage'
 #url:              'http://127.0.0.1:4000'
 url:              http://yoshuanava.com
 repository:		  http://www.github.com/YoshuaNava/yoshuanava.github.io
-baseurl:          /
+baseurl:          ''
 
 # Navigation
 navigation:
