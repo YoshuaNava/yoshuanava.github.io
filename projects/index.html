@@ -1,77 +1,72 @@
 ---
-layout: default
+layout: page
 title: Projects
+description: Page with links to all articles of the blog
+theme: blue
 ---
 
-<div class="col-sm-12">
-	<div class="page-title">
-		{{ page.title }}
-	</div>
-<div class="post">
-	<h1>Robotics</h1>
-	{% for post in site.posts %}
-		{% if post.type == "project" %}
-			{% if post.category == "robotics" %}
-				<article class="post">
-					{% if post.external-url %}
-						<h3>
-							<a href="{{ post.external-url }}">{{ post.title }}</a> 
-							<a class="anchor" href="{{ post.url }}"><i class="icon-anchor"></i></a>
-						</h3>
-					{% else %}
-						<h3><a href="{{ post.url }}">{{ post.title }}</a></h1>
-						<div class="post-description">{{ post.description }}</div>
-					{% endif %}
-				</article>
-			{% endif %}
-		{% endif %}
-	{% endfor %}
+  <h2>Robotics</h2>
+  {% for post in site.posts %}
+    {% if post.type == "project" %}
+      {% if post.category == "robotics" %}
+        <article class="post">
+          {% if post.external-url %}
+            <h4>
+              <a href="{{ post.external-url }}">{{ post.title }}</a> 
+              <a class="anchor" href="{{ post.url }}"><i class="icon-anchor"></i></a>
+            </h4>
+          {% else %}
+            <h4><a href="{{ post.url }}">{{ post.title }}</a></h4>
+            <div class="post-description">{{ post.description }}</div>
+          {% endif %}
+        </article>
+      {% endif %}
+    {% endif %}
+  {% endfor %}
 
-	<br/>
-	<br/>
-	<hr>
-	<br/>
-	<h1>Embedded systems</h1>
-	{% for post in site.posts %}
-		{% if post.type == "project" %}
-			{% if post.category == "embeddedsystems" %}
-				<article class="post">
-					{% if post.external-url %}
-						<h3>
-							<a href="{{ post.external-url }}">{{ post.title }}</a> 
-							<a class="anchor" href="{{ post.url }}"><i class="icon-anchor"></i></a>
-						</h3>
-					{% else %}
-						<h3><a href="{{ post.url }}">{{ post.title }}</a></h1>
-						<div class="post-description">{{ post.description }}</div>
-					{% endif %}
-				</article>
-			{% endif %}
-		{% endif %}
-	{% endfor %}
-	
-	
-	<br/>
-	<br/>
-	<hr>
-	<br/>
-	<h1>Other</h1>
-	{% for post in site.posts %}
-		{% if post.type == "project" %}
-			{% if post.category == "other" %}
-				<article class="post">
-					{% if post.external-url %}
-						<h3>
-							<a href="{{ post.external-url }}">{{ post.title }}</a> 
-							<a class="anchor" href="{{ post.url }}"><i class="icon-anchor"></i></a>
-						</h3>
-					{% else %}
-						<h3><a href="{{ post.url }}">{{ post.title }}</a></h1>
-						<div class="post-description">{{ post.description }}</div>
-					{% endif %}
-				</article>
-			{% endif %}
-		{% endif %}
-	{% endfor %}
-</div>
-</div>
+  <br/>
+  <br/>
+  <hr>
+  <br/>
+  <h2>Embedded systems</h2>
+  {% for post in site.posts %}
+    {% if post.type == "project" %}
+      {% if post.category == "embeddedsystems" %}
+        <article class="post">
+          {% if post.external-url %}
+            <h4>
+              <a href="{{ post.external-url }}">{{ post.title }}</a> 
+              <a class="anchor" href="{{ post.url }}"><i class="icon-anchor"></i></a>
+            </h4>
+          {% else %}
+            <h4><a href="{{ post.url }}">{{ post.title }}</a></h4>
+            <div class="post-description">{{ post.description }}</div>
+          {% endif %}
+        </article>
+      {% endif %}
+    {% endif %}
+  {% endfor %}
+  
+  
+  <br/>
+  <br/>
+  <hr>
+  <br/>
+  <h2>Other</h2>
+  {% for post in site.posts %}
+    {% if post.type == "project" %}
+      {% if post.category == "other" %}
+        <article class="post">
+          {% if post.external-url %}
+            <h4>
+              <a href="{{ post.external-url }}">{{ post.title }}</a> 
+              <a class="anchor" href="{{ post.url }}"><i class="icon-anchor"></i></a>
+            </h4>
+          {% else %}
+            <h4><a href="{{ post.url }}">{{ post.title }}</a></h4>
+            <div class="post-description">{{ post.description }}</div>
+          {% endif %}
+        </article>
+      {% endif %}
+    {% endif %}
+  {% endfor %}

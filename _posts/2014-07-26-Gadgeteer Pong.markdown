@@ -11,6 +11,7 @@ comments: true
 title: "Gadgeteer Pong <b>(Article under construction)</b>"
 description: "NCSU Embedded Systems Summer Course Project: A Pong (videogame) rendition for the FEZ Hydra Gadgeteer boards."
 p_languages: "C#"
+publish: false
 ---
 
 Together with Ronald Oribio, Alejandro Martinez and Oswaldo Sanchez.

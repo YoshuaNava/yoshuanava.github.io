@@ -1,8 +1,4 @@
 source 'https://rubygems.org'
-
+gem 'json'
 gem 'jekyll'
-gem 'maruku'
-gem 'rake'
-gem 'sass'
-gem 'uglifier'
-gem 'github-pages'
+gem 'jekyll-paginate'

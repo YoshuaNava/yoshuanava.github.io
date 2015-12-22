@@ -1,24 +1,22 @@
 ---
-layout: default
-title: Archives
+layout: page
+title: Blog
+description: Page with links to all articles of the blog
+theme: green
 ---
-
-<div id="blog-archives">
-
-	{% for post in site.posts %}
-		{% if post.type == "blog" %}
-			<article class="post">
-				{% if post.external-url %}
-					<h1>
-						<a href="{{ post.external-url }}">{{ post.title }}</a> 
-						<a class="anchor" href="{{ post.url }}"><i class="icon-anchor"></i></a>
-					</h1>
-				{% else %}
-					<h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
-				{% endif %}
-			</article>
-			<div class="post-description">{{ post.description }}</div>
-		{% endif %}
-	{% endfor %}
-
-</div>
+    <ul>
+      {% for post in site.posts %}
+        {% if post.type == "blog" and post.publish == "true" %}
+          {% unless post.next %}
+            <h3>{{ post.date | date: '%Y' }}</h3>
+          {% else %}
+            {% capture year %}{{ post.date | date: '%Y' }}{% endcapture %}
+            {% capture nyear %}{{ post.next.date | date: '%Y' }}{% endcapture %}
+            {% if year != nyear %}
+              <h3>{{ post.date | date: '%Y' }}</h3>
+            {% endif %}
+          {% endunless %}
+          <li class="alink"><a href="{{ post.url }}" class="green-link">{{ post.title }}</a></li>
+        {% endif %}
+      {% endfor %}
+    </ul>
