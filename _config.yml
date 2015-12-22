@@ -54,7 +54,7 @@ disqus_shortname: "YoshuaNava"
 footersvg: 'true'
 
 # Disqus
-disqushandler: 'testingblogo'
+disqushandler: 'yoshuanava'
 
 # Blog Configurations
 paginate: 10 # Posts per page on the blog index
